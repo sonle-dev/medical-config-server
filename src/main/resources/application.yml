@@ -1,0 +1,12 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///C:/medical-config-repo   # Thay đường dẫn thư mục Git local của bạn vào đây
+          default-label: master                # Hoặc main tùy thuộc vào nhánh git local của bạn
